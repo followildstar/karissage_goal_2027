@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karis Sage — Illustrator Launch Strategy 2026–2027</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --paper: #fbfaf6;
+      --ink: #171717;
+      --muted: #6f6b64;
+      --line: #d9d4ca;
+      --accent: #7b2f2f;
+      --soft: #ebe5db;
+      --green: #46584b;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+      line-height: 1.72
+    }
+
+    .wrap {
+      max-width: 1180px;
+      margin: auto;
+      padding: 0 34px 100px
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 70px 0 48px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    h1 {
+      font-family: Georgia, "Noto Serif KR", serif;
+      font-weight: 500;
+      font-size: clamp(48px, 8vw, 105px);
+      line-height: .94;
+      letter-spacing: -.045em;
+      margin: 30px 0
+    }
+
+    .hero p {
+      max-width: 720px;
+      font-size: 20px;
+      color: #393733
+    }
+
+    .meta {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(244, 241, 234, .94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      margin: 0 -34px;
+      padding: 12px 34px;
+      overflow: auto;
+      white-space: nowrap
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-right: 24px;
+      font-size: 13px
+    }
+
+    section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    h2 {
+      font-family: Georgia, "Noto Serif KR", serif;
+      font-size: 42px;
+      font-weight: 500;
+      letter-spacing: -.03em;
+      margin: 0 0 28px
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 32px 0 12px
+    }
+
+    .lead {
+      font-size: 21px;
+      max-width: 850px
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px
+    }
+
+    .card {
+      grid-column: span 4;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 26px;
+      min-height: 190px
+    }
+
+    .card.wide {
+      grid-column: span 6
+    }
+
+    .card.full {
+      grid-column: 1/-1
+    }
+
+    .num {
+      font-family: Georgia, serif;
+      font-size: 48px;
+      color: var(--accent);
+      line-height: 1
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .callout {
+      border-left: 3px solid var(--accent);
+      padding: 4px 0 4px 22px;
+      margin: 28px 0;
+      font-family: Georgia, "Noto Serif KR", serif;
+      font-size: 24px;
+      max-width: 900px
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--paper);
+      font-size: 14px
+    }
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: top;
+      padding: 16px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    th {
+      font-size: 12px;
+      letter-spacing: .08em;
+      color: var(--muted);
+      text-transform: uppercase
+    }
+
+    .phase {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 26px;
+      padding: 28px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .phase .date {
+      font-family: Georgia, serif;
+      font-size: 22px
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid var(--line);
+      padding: 4px 9px;
+      border-radius: 20px;
+      font-size: 11px;
+      margin: 2px;
+      color: var(--muted)
+    }
+
+    ul {
+      padding-left: 20px
+    }
+
+    li {
+      margin: 7px 0
+    }
+
+    .kpi {
+      font-family: Georgia, serif;
+      font-size: 30px;
+      margin: 6px 0
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px
+    }
+
+    .rule {
+      padding: 18px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .rule b {
+      display: block;
+      margin-bottom: 5px
+    }
+
+    .footer {
+      padding: 50px 0;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    @media(max-width:760px) {
+      .wrap {
+        padding: 0 20px 70px
+      }
+
+      .hero {
+        min-height: 75vh
+      }
+
+      .card,
+      .card.wide {
+        grid-column: 1/-1
+      }
+
+      .two {
+        grid-template-columns: 1fr
+      }
+
+      .phase {
+        grid-template-columns: 1fr
+      }
+
+      h2 {
+        font-size: 34px
+      }
+
+      nav {
+        margin: 0 -20px;
+        padding: 12px 20px
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff
+      }
+
+      .wrap {
+        max-width: none
+      }
+
+      .hero {
+        min-height: auto;
+        height: 245mm
+      }
+
+      nav {
+        display: none
+      }
+
+      section {
+        break-inside: avoid
+      }
+
+      .card {
+        break-inside: avoid
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <div class="eyebrow">Karis Sage / Illustrator Launch Strategy</div>
+        <h1>관찰을<br>작품 세계로.</h1>
+        <p>2026년 11월부터 2027년 6월까지, ‘그림을 잘 그리는 사람’이 아니라
+          <strong>자기 시선이 반복해서 보이는 일러스트레이터</strong>가 되기 위한 8개월 실행 전략.
+        </p>
+      </div>
+      <div class="meta"><span>Preparation 2026.11–12</span><span>Launch 2027.01–06</span><span>Travel × Archive ×
+          Illustration × Publishing</span></div>
+    </header>
+
+    <nav>
+      <a href="#goal">목표</a><a href="#position">포지셔닝</a><a href="#system">작업 시스템</a>
+      <a href="#roadmap">8개월 로드맵</a><a href="#travel">여행 전략</a><a href="#publish">발행</a>
+      <a href="#business">외부 활동</a><a href="#kpi">성과 기준</a><a href="#rules">원칙</a>
+    </nav>
+
+    <section id="goal">
+      <div class="eyebrow">01 / Definition of Success</div>
+      <h2>6개월 뒤 무엇이 남아야 하는가</h2>
+      <p class="lead">목표를 ‘유명한 일러스트레이터가 된다’로 잡으면 실행할 수 없습니다. 첫 6개월의 성공은 <strong>작가로서 다음 기회를 만들어낼 증거가 축적되는 것</strong>으로
+        정의하는 편이 현실적입니다.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="num">01</div>
+          <h3>작품 세계</h3>
+          <p>한눈에 같은 사람이 만들었다고 느껴지는 대표 시리즈 1개와 보조 실험 시리즈 1개.</p>
+        </div>
+        <div class="card">
+          <div class="num">02</div>
+          <h3>작품 축적</h3>
+          <p>대표작 12–18점. 그중 포트폴리오의 첫 화면에 둘 수 있는 핵심작 6–8점.</p>
+        </div>
+        <div class="card">
+          <div class="num">03</div>
+          <h3>언어화</h3>
+          <p>‘무엇을 그리는가’보다 ‘왜 그것을 보게 되는가’를 설명하는 Artist Statement와 시각 규칙.</p>
+        </div>
+        <div class="card">
+          <div class="num">04</div>
+          <h3>공개 채널</h3>
+          <p>정돈된 Instagram + 작가 웹 포트폴리오. SNS가 작품을 대신하지 않고 작품으로 들어가는 입구가 되게 합니다.</p>
+        </div>
+        <div class="card">
+          <div class="num">05</div>
+          <h3>물성</h3>
+          <p>소형 아트북/진(zine) 또는 포트폴리오 북 1종. 화면 밖에서도 세계관이 성립하는지 검증합니다.</p>
+        </div>
+        <div class="card">
+          <div class="num">06</div>
+          <h3>외부 접점</h3>
+          <p>공모·오픈콜·마켓·페어·협업 제안 등 최소 3회의 실제 외부 제출/접촉. 결과보다 ‘시장에 내보낸 경험’을 확보합니다.</p>
+        </div>
+      </div>
+      <div class="callout">첫 6개월의 핵심 성과는 팔로워 수가 아니라, “이 사람은 무엇을 보는 작가인가?”에 답할 수 있게 되는 것입니다.</div>
+    </section>
+
+    <section id="position">
+      <div class="eyebrow">02 / Positioning</div>
+      <h2>Karis Sage가 이미 가진 유리한 재료</h2>
+      <div class="two">
+        <div>
+          <h3>이미 반복되는 특징</h3>
+          <ul>
+            <li>미니멀한 화면, 충분한 여백, 제한된 색, 명확한 위계.</li>
+            <li>고양이·여성·집·피아노·빛·감정처럼 실제 생활에서 나온 소재.</li>
+            <li>크기 대비, 비현실적 스케일, 사물을 은유로 전환하는 개념적 구성.</li>
+            <li>사진을 ‘예쁜 기록’보다 왜 시선이 멈췄는지 분석하는 관찰 습관.</li>
+            <li>디자인/퍼블리싱 경력 덕분에 편집, 웹, 타이포그래피, 정보 구조까지 직접 통제 가능.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>버려야 할 경쟁 방식</h3>
+          <ul>
+            <li>유행하는 그림체를 빨리 따라가며 스타일을 고정하려는 것.</li>
+            <li>한 작품을 완벽하게 만들고 나서 다음 작품으로 가는 방식.</li>
+            <li>피드를 예쁘게 맞추기 위해 삶이나 작품을 연출하는 것.</li>
+            <li>좋아요가 많이 나온 이미지와 ‘내 작품 세계에 필요한 이미지’를 동일시하는 것.</li>
+            <li>AI가 만들어준 완성 이미지를 자신의 삶과 관찰보다 앞에 두는 것.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout">추천 포지션: <strong>“일상의 작은 관찰을 여백·크기·상징으로 다시 구성하는 시각적 에세이스트.”</strong><br><span class="small">이
+          문구 자체를 최종 브랜드 문장으로 확정하라는 뜻이 아니라, 8개월 동안 검증할 작업 가설입니다.</span></div>
+    </section>
+
+    <section id="system">
+      <div class="eyebrow">03 / Creative Operating System</div>
+      <h2>작품보다 먼저 ‘작품이 계속 나오는 구조’를 만듭니다</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>단계</th>
+            <th>질문</th>
+            <th>산출물</th>
+            <th>시간 제한</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01. Observe</td>
+            <td>왜 내 시선이 여기서 멈췄나?</td>
+            <td>사진·메모·색·사물·감정</td>
+            <td>일상</td>
+          </tr>
+          <tr>
+            <td>02. Extract</td>
+            <td>이 장면에서 없어도 되는 것은?</td>
+            <td>핵심 형태 1–3개, 문장 1개</td>
+            <td>15분</td>
+          </tr>
+          <tr>
+            <td>03. Transform</td>
+            <td>크기·위치·맥락을 바꾸면 무엇이 되는가?</td>
+            <td>썸네일 3안</td>
+            <td>30–45분</td>
+          </tr>
+          <tr>
+            <td>04. Make</td>
+            <td>가장 적은 요소로 감정이 남는가?</td>
+            <td>완성/준완성 작품</td>
+            <td>2–5시간</td>
+          </tr>
+          <tr>
+            <td>05. Review</td>
+            <td>예쁜가가 아니라 Karis다운 이유가 있는가?</td>
+            <td>Keep / Modify / Drop</td>
+            <td>20분</td>
+          </tr>
+          <tr>
+            <td>06. Archive</td>
+            <td>이번 선택에서 반복된 규칙은?</td>
+            <td>Karis Bible 규칙 0–1개</td>
+            <td>10분</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>주간 최소 생산량</h3>
+      <p>직장과 병행하는 준비기에는 <strong>관찰 5개 + 썸네일 3개 + 실험작 1개</strong>. 2027년 본격기에는 <strong>관찰 7개 + 썸네일 5개 + 완성작 1개</strong>를
+        기본 단위로 권합니다. 완성작을 매주 반드시 공개할 필요는 없습니다.</p>
+    </section>
+
+    <section id="roadmap">
+      <div class="eyebrow">04 / Roadmap</div>
+      <h2>2026.11 → 2027.06</h2>
+
+      <div class="phase">
+        <div class="date">NOV 2026<br><span class="small">준비 01</span></div>
+        <div>
+          <h3>채집과 삭제</h3>
+          <p>새로운 스타일을 만드는 달이 아니라, 지금까지 만든 것에서 반복되는 자신을 찾는 달입니다.</p>
+          <span class="tag">기존 그림 50–100개 리뷰</span><span class="tag">사진 아카이브 리뷰</span><span class="tag">55 Topics
+            계속</span>
+          <ul>
+            <li>기존 그림·사진을 Keep / Maybe / Drop으로 분류.</li>
+            <li>좋아하는 작품 15개에서 형태·색·여백·주제·구도를 역추적.</li>
+            <li>사용할 매체, 캔버스 비율, 컬러 제한, 명암 규칙의 임시 버전 정의.</li>
+            <li>궁궐 1곳을 ‘관광’이 아니라 첫 현장 관찰 테스트로 방문.</li>
+          </ul>
+          <strong>월말 결과:</strong> Visual DNA 1장 + 소재 라이브러리 + 작업 규칙 v0.1
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="date">DEC 2026<br><span class="small">준비 02</span></div>
+        <div>
+          <h3>작은 파일럿 시리즈</h3>
+          <p>3개의 방향을 생각만 하지 말고 각각 2–3점씩 만들어 비교합니다.</p>
+          <ul>
+            <li>A: 일상의 작은 장면 / B: 크기 대비·은유 / C: 여행·한국적 공간을 현대적으로 재해석.</li>
+            <li>각 방향 2–3점 제작 후 ‘계속 그리고 싶은가 / 변주 가능한가 / 나만의 관찰이 있는가’로 검토.</li>
+            <li>웹 포트폴리오 구조와 Instagram 공개 계정의 최소 템플릿 구축.</li>
+            <li>2027년 여행 후보를 ‘작품 소재 가능성’ 기준으로 조사.</li>
+          </ul>
+          <strong>월말 결과:</strong> 파일럿 6–9점 + 2027 메인 시리즈 1개 선정 + 작가 문장 초안
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="date">JAN 2027<br><span class="small">본격 01</span></div>
+        <div>
+          <h3>Series 01 — 선언보다 증거</h3>
+          <ul>
+            <li>선정한 메인 시리즈 첫 4점 제작.</li>
+            <li>한 작품을 ‘완벽한 대표작’으로 만들기보다 4점의 관계를 먼저 확인.</li>
+            <li>공개 계정은 결과 1개 + 관찰/과정 1개 정도의 리듬으로 시작.</li>
+            <li>개인 기록에는 왜 찍고 왜 그렸는지를 자세히 남김.</li>
+          </ul>
+          <strong>월말 결과:</strong> 메인 시리즈 4점, 공개 포트폴리오 첫 버전.
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="date">FEB 2027<br><span class="small">본격 02</span></div>
+        <div>
+          <h3>한국적 공간을 ‘장식’이 아닌 시선으로</h3>
+          <ul>
+            <li>궁궐·한옥·정원 등 국내 현장 1–2곳 집중 관찰.</li>
+            <li>단청·한복·기와를 그대로 그리는 접근보다 여백, 축, 문틀, 그림자, 반복, 오래된 재료와 현대인의 관계를 채집.</li>
+            <li>현장 사진 → 추상화 → 일러스트로 이어지는 변환 과정을 기록.</li>
+          </ul>
+          <strong>월말 결과:</strong> 여행 기반 작품 2–3점 + ‘Karis가 한국적 요소를 쓰는 방식’ 규칙 초안.
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="date">MAR 2027<br><span class="small">본격 03</span></div>
+        <div>
+          <h3>Series 01 완성 + 편집</h3>
+          <ul>
+            <li>메인 시리즈를 8–10점 규모로 완성.</li>
+            <li>작품 제목·순서·작품 사이의 여백까지 하나의 편집물로 설계.</li>
+            <li>작가 소개, 프로필, Artist Statement 1차 확정.</li>
+            <li>공모전·오픈콜·독립출판/마켓 후보를 실제 제출 일정으로 전환.</li>
+          </ul>
+          <strong>월말 결과:</strong> Series 01 v1.0 + 제출 가능한 포트폴리오 PDF/웹.
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="date">APR 2027<br><span class="small">본격 04</span></div>
+        <div>
+          <h3>여행을 콘텐츠가 아니라 연구로</h3>
+          <ul>
+            <li>국내 또는 첫 해외 리서치 여행 실행.</li>
+            <li>여행 중 ‘그릴 것’을 찾기보다 반복해서 눈이 가는 것 30개를 채집.</li>
+            <li>사진, 작은 드로잉, 색 견본, 소리/문장 메모를 하나의 Field Note로 묶음.</li>
+            <li>여행 직후 바로 작품화하지 않고 3–7일 숙성 후 소재 선별.</li>
+          </ul>
+          <strong>월말 결과:</strong> Travel Field Notes 01 + 작품 후보 10개 + 완성작 2점.
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="date">MAY 2027<br><span class="small">본격 05</span></div>
+        <div>
+          <h3>작품을 물성으로 바꾸기</h3>
+          <ul>
+            <li>기존 시리즈와 여행 기록을 16–32p 소형 zine/artist book으로 편집.</li>
+            <li>엽서·스티커를 무작정 늘리지 말고 작품 세계와 맞는 1–2개 제품만 테스트.</li>
+            <li>실제 인쇄 테스트로 선, 질감, 제한색이 종이에서 어떻게 보이는지 확인.</li>
+            <li>작업을 외부에 1회 이상 제출하거나 협업 제안을 보냄.</li>
+          </ul>
+          <strong>월말 결과:</strong> 인쇄 샘플 + 소형 출판물 prototype + 외부 제출.
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="date">JUN 2027<br><span class="small">본격 06</span></div>
+        <div>
+          <h3>첫 시즌 결산과 공개</h3>
+          <ul>
+            <li>6개월 작업 중 대표 12–18점만 남겨 재편집.</li>
+            <li>웹사이트를 ‘작품 / Field Notes / About’ 중심으로 정리.</li>
+            <li>온라인 공개 또는 작은 오프라인 프레젠테이션/마켓/페어를 목표로 함.</li>
+            <li>조회수보다 저장·문의·협업·구매·재방문·본인이 계속 그리고 싶은 소재를 분석.</li>
+            <li>다음 6개월에 확장할 Series 02를 결정.</li>
+          </ul>
+          <strong>최종 결과:</strong> 첫 작가 시즌의 포트폴리오 + 물성 결과물 + 외부 접점 + 다음 시리즈의 근거.
+        </div>
+      </div>
+    </section>
+
+    <section id="travel">
+      <div class="eyebrow">05 / Travel as Research</div>
+      <h2>여행은 마케팅보다 먼저 ‘시각 연구’여야 합니다</h2>
+      <p class="lead">여행 사진을 올리기 위해 여행하면 Karis의 세계보다 여행지가 주인공이 됩니다. 반대로 같은 시선으로 서울의 궁궐과 해외의 낯선 공간을 바라보면, 장소가 달라져도 작가가
+        주인공으로 남습니다.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>여행지 평가 기준</th>
+            <th>질문</th>
+            <th>비중</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>형태적 자원</td>
+            <td>건축, 자연, 패턴, 여백, 빛에서 독특한 형태를 채집할 수 있는가?</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>세계관 연결</td>
+            <td>현재 탐구 중인 ‘작음/큼, 고요, 시간, 여백, 여성, 일상’과 연결되는가?</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>문화적 깊이</td>
+            <td>표면적 관광 이미지보다 조사할 역사·생활·공예가 있는가?</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>제작 가능성</td>
+            <td>사진, 드로잉, 글, 작품으로 실제 전환하기 쉬운가?</td>
+            <td>10%</td>
+          </tr>
+          <tr>
+            <td>현실성</td>
+            <td>예산·시간·안전·동선이 지속 가능한가?</td>
+            <td>10%</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>국내 시작 방식</h3>
+      <p><strong>궁궐 → 한옥/정원 → 오래된 도시 공간 → 자연</strong> 순으로 범위를 넓히는 방법이 좋습니다. 궁궐에서도 ‘한국적인 장식’을 수집하기보다 문과 문 사이의 프레임, 비어 있는
+        마당, 지붕의 선, 돌의 크기, 햇빛이 만드는 면처럼 Karis의 기존 조형 언어와 만나는 요소를 찾습니다.</p>
+      <h3>해외 여행지 선정 원칙</h3>
+      <p>지금 단계에서는 유명한 ‘예술 도시 리스트’를 먼저 확정하지 않는 편이 좋습니다. 11–12월 파일럿에서 실제로 반복되는 관심사가 <strong>건축인지, 정원인지, 공예인지, 현대미술인지,
+          자연인지</strong> 확인된 뒤 그 소재가 가장 밀도 높은 장소를 고르는 것이 낫습니다.</p>
+    </section>
+
+    <section id="publish">
+      <div class="eyebrow">06 / Publishing & Marketing</div>
+      <h2>마케팅도 작품 제작의 부산물로 설계합니다</h2>
+      <div class="grid">
+        <div class="card wide">
+          <h3>Private Archive</h3>
+          <p>왜 찍었는지, 무엇이 아름다웠는지, 실패한 시안까지 기록합니다. 이것은 브랜드 채널이 아니라 작가의 연구 노트입니다.</p>
+        </div>
+        <div class="card wide">
+          <h3>Public Instagram</h3>
+          <p>깊은 해설을 전부 말하지 않습니다. 완성작, 짧은 영어 문장, 선택된 Field Note로 해석의 여백을 남깁니다.</p>
+        </div>
+        <div class="card wide">
+          <h3>Portfolio Website</h3>
+          <p>디자이너 포트폴리오처럼 모든 것을 설명하지 말고 작품이 먼저 보이게 합니다. Project/Series → Field Notes → About 정도면 충분합니다.</p>
+        </div>
+        <div class="card wide">
+          <h3>Travel Content</h3>
+          <p>“여기 다녀왔다”가 아니라 <strong>Observation → Transformation → Artwork</strong> 3단 구조로 발행합니다. 같은 여행 한 번으로 사진 기록, 과정,
+            완성작을 자연스럽게 연결할 수 있습니다.</p>
+        </div>
+      </div>
+      <h3>권장 콘텐츠 비율</h3>
+      <p><strong>작품 50 / 관찰 25 / 과정 15 / 작가의 생활 10</strong> 정도에서 시작합니다. 고정 규칙이 아니라 작품보다 콘텐츠 제작이 많아지는 것을 막기 위한 안전장치입니다.
+      </p>
+    </section>
+
+    <section id="business">
+      <div class="eyebrow">07 / External Validation</div>
+      <h2>‘준비가 끝나면 데뷔’하지 않습니다</h2>
+      <p>3월부터는 작품을 밖으로 내보내야 합니다. 공모전, 독립출판, 일러스트 페어, 소규모 마켓, 브랜드 협업, 전시 오픈콜 중 작품과 맞는 접점을 선택합니다. 중요한 것은 모든 채널을 하는 것이 아니라
+        <strong>실제 타인의 선택을 경험하는 것</strong>입니다.</p>
+      <div class="two">
+        <div>
+          <h3>1차 목표</h3>
+          <ul>
+            <li>외부 제출/제안 3회 이상</li>
+            <li>인쇄 결과물 1종</li>
+            <li>실제 판매 테스트 1회</li>
+            <li>작품 관련 문의 또는 피드백 기록</li>
+          </ul>
+        </div>
+        <div>
+          <h3>아직 하지 않아도 되는 것</h3>
+          <ul>
+            <li>굿즈 종류 대량 확대</li>
+            <li>매일 업로드</li>
+            <li>광고비 집행</li>
+            <li>팔로워 목표를 작품 목표보다 앞세우기</li>
+            <li>처음부터 전업 작가 수입을 증명하려 하기</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="kpi">
+      <div class="eyebrow">08 / Scoreboard</div>
+      <h2>2027년 6월, 이 표로 판단합니다</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>영역</th>
+            <th>최소 성공</th>
+            <th>좋은 결과</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>대표 작품</td>
+            <td>12점</td>
+            <td>18점 이상 중 6–8점이 강한 대표작</td>
+          </tr>
+          <tr>
+            <td>일관된 Series</td>
+            <td>1개</td>
+            <td>Series 01 완결 + Series 02 방향 발견</td>
+          </tr>
+          <tr>
+            <td>Visual Rules</td>
+            <td>5개</td>
+            <td>실제 반복 선택에서 나온 8–12개의 Karis Bible 규칙</td>
+          </tr>
+          <tr>
+            <td>Field Notes</td>
+            <td>3회</td>
+            <td>국내+여행 리서치가 하나의 아카이브 체계로 정착</td>
+          </tr>
+          <tr>
+            <td>포트폴리오</td>
+            <td>웹 공개</td>
+            <td>작품/작가문장/연락처/Field Notes가 완성된 독립 사이트</td>
+          </tr>
+          <tr>
+            <td>물성 결과물</td>
+            <td>prototype 1종</td>
+            <td>소량 판매 가능한 zine/print 1–2종</td>
+          </tr>
+          <tr>
+            <td>외부 접점</td>
+            <td>3회 제출</td>
+            <td>선정·판매·협업·전시·의미 있는 문의 중 1개 이상 발생</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout">팔로워는 참고 지표입니다. 작품 수, 반복되는 시각 언어, 외부 제출, 실제 반응이 먼저입니다.</div>
+    </section>
+
+    <section id="rules">
+      <div class="eyebrow">09 / Karis Working Rules</div>
+      <h2>8개월 동안 지킬 것</h2>
+      <div class="rule"><b>01. 실제 삶이 AI보다 먼저다.</b> 가진 사진과 그림 → 직접 관찰/촬영/제작 → 필요한 경우 AI 시각 실험 순서.</div>
+      <div class="rule"><b>02. 스타일보다 시선을 반복한다.</b> 선의 모양을 억지로 통일하기보다 무엇에 눈이 가고 무엇을 삭제하는지의 일관성을 찾습니다.</div>
+      <div class="rule"><b>03. 여행지를 그리지 말고 여행지에서 발견한 자신을 그린다.</b> 장소의 유명한 상징보다 반복해서 눈이 가는 형태를 우선합니다.</div>
+      <div class="rule"><b>04. 한 장의 완벽함보다 시리즈의 힘을 본다.</b> 최소 4–6점을 나란히 놓고 판단합니다.</div>
+      <div class="rule"><b>05. 설명을 줄이고 구조를 강하게 한다.</b> 한 작품의 주인공은 1개. 보조 요소는 이유가 있을 때만 둡니다.</div>
+      <div class="rule"><b>06. ‘예쁜가?’ 다음에 반드시 ‘왜 Karis다운가?’를 묻는다.</b> 대답할 수 없다면 아름다운 참고 이미지일 수는 있어도 아직 대표작은 아닙니다.</div>
+      <div class="rule"><b>07. 데이터는 판결이 아니라 관찰이다.</b> 좋아요가 낮아도 중요한 작품일 수 있고, 반대로 반응이 좋아도 세계관에서 버릴 수 있습니다.</div>
+      <div class="rule"><b>08. 매월 하나는 밖으로 내보낸다.</b> 2027년 3월 이후에는 공개, 제출, 인쇄, 판매, 제안 중 적어도 하나를 실행합니다.</div>
+    </section>
+
+    <section>
+      <div class="eyebrow">10 / First Action</div>
+      <h2>가장 먼저 할 일</h2>
+      <p class="lead">11월에 새 그림부터 시작하지 마십시오. <strong>지금까지 만든 이미지에서 ‘이미 존재하는 Karis’를 찾는 것</strong>이 첫 작업입니다.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="kpi">100</div>
+          <p>기존 사진·그림을 최대 100개까지 한 화면에 모읍니다.</p>
+        </div>
+        <div class="card">
+          <div class="kpi">15</div>
+          <p>이유 없이도 계속 보고 싶은 것 15개만 남깁니다.</p>
+        </div>
+        <div class="card">
+          <div class="kpi">5</div>
+          <p>그 15개에서 반복되는 선택 5개를 문장으로 씁니다.</p>
+        </div>
+      </div>
+      <div class="callout">이 5개의 반복 선택이 2027년의 작품 계획보다 중요합니다. 계획은 바뀌어도, 반복해서 선택하는 시선은 작가의 자산으로 남기 때문입니다.</div>
+    </section>
+
+    <footer class="footer">
+      KARIS SAGE — Illustrator Launch Strategy / Working document / 2026.10<br>
+      본 문서는 현재까지의 Karis Sage 프로젝트 기록을 토대로 만든 실행 초안이며, 2026년 11–12월의 실제 선택에 따라 2027년 계획을 조정하는 것을 전제로 합니다.
+    </footer>
+  </div>
+</body>
+
+</html>
